@@ -1,0 +1,104 @@
+:root {
+  --spacing: 0.25rem;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background-color: hsl(216deg, 12%, 8%);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+body .rating-container {
+  background-color: hsl(213deg, 19%, 18%);
+  padding: 20px;
+  width: 375px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 20px;
+}
+body .rating-container .top img {
+  background-color: hsl(216deg, 12%, 24%);
+  padding: 8px;
+  border-radius: 100%;
+}
+body .rating-container .title h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+body .rating-container .title p {
+  color: hsl(217deg, 12%, 63%);
+  font-size: 15px;
+}
+body .rating-container .rating {
+  display: flex;
+  justify-content: space-between;
+}
+body .rating-container .rating .rate {
+  background-color: hsl(216deg, 12%, 24%);
+  color: hsl(217deg, 12%, 63%);
+  border-radius: 50%;
+  padding: 8px 12px 6px 12px;
+  margin-bottom: 20px;
+  border: none;
+}
+body .rating-container .rating .rate:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: #ffffff;
+}
+body .rating-container .rating .active {
+  background-color: hsl(25deg, 97%, 53%);
+  color: #ffffff;
+}
+body .rating-container .submit button {
+  background-color: hsl(25deg, 97%, 53%);
+  width: 100%;
+  border: none;
+  padding: 8px;
+  border-radius: 20px;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+}
+body .rating-container .submit button:hover {
+  background-color: #ffffff;
+  color: hsl(25deg, 97%, 53%);
+}
+body .thank-you {
+  display: grid;
+  justify-items: center;
+  padding: 20px;
+  width: 375px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 20px;
+  background-color: hsl(213deg, 19%, 18%);
+  padding: 20px;
+  display: none;
+}
+body .thank-you .show {
+  display: block;
+}
+body .thank-you h2 {
+  color: hsl(0deg, 0%, 100%);
+}
+body .thank-you p {
+  color: hsl(217deg, 12%, 63%);
+  font-size: 15px;
+}
+body .thank-you .details {
+  display: grid;
+  justify-items: center;
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */

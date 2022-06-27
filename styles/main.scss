@@ -1,0 +1,126 @@
+//Variables
+:root {
+  --spacing: 0.25rem;
+}
+
+* {
+  box-sizing: border-box;
+
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+
+  .rating-container {
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    width: 375px;
+    height: max-content;
+    border-radius: 20px;
+
+    .top {
+      img {
+        background-color: hsl(216, 12%, 24%);
+        padding: 8px;
+        border-radius: 100%;
+      }
+    }
+
+    .title {
+      h1 {
+        color: hsl(0, 0%, 100%);
+      }
+
+      p {
+        color: hsl(217, 12%, 63%);
+        font-size: 15px;
+      }
+    }
+
+    .rating {
+      display: flex;
+      justify-content: space-between;
+
+      .rate {
+        background-color: hsl(216, 12%, 24%);
+        color: hsl(217, 12%, 63%);
+        // padding: 2px 8px;
+        border-radius: 50%;
+        padding: 8px 12px 6px 12px;
+        margin-bottom: 20px;
+        border: none;
+      }
+      .rate:hover {
+        background-color: hsl(25, 97%, 53%);
+        color: #ffffff;
+      }
+      .active {
+        background-color: hsl(25, 97%, 53%);
+        color: #ffffff;
+      }
+    }
+
+    .submit {
+      button {
+        background-color: hsl(25, 97%, 53%);
+        width: 100%;
+        border: none;
+        padding: 8px;
+        border-radius: 20px;
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+      }
+
+      button:hover {
+        background-color: #ffffff;
+        color: hsl(25, 97%, 53%);
+      }
+    }
+  }
+
+  .thank-you {
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+    width: 375px;
+    height: max-content;
+    border-radius: 20px;
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    display: none;
+
+    .show {
+      display: block;
+    }
+
+    h2 {
+      color: hsl(0, 0%, 100%);
+    }
+
+    p {
+      color: hsl(217, 12%, 63%);
+      font-size: 15px;
+    }
+
+    .details {
+      display: grid;
+      justify-items: center;
+    }
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
